@@ -65,6 +65,11 @@ img {
     text-decoration: none;
 }
 
+.list a:hover,
+.list a:focus {
+  color: #e84545;
+}
+
 .list-content{
     margin: 0;
     padding: 0;
@@ -126,6 +131,11 @@ button{
     height: 60px;
     background-color: #ddddd7;
     border: 1px solid #626262; 
+}
+
+.main-footer button:hover,
+.main-footer button:focus {
+  color: #e84545;
 }
 
 /* visually-hidden helper */
