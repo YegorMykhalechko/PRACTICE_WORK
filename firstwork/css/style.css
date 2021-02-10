@@ -37,16 +37,13 @@ img {
     font-size: 0;
     text-align: center;
     margin: 0;
-    padding: 0;
+    padding: 103px 0 0 ;
+    font-size: 14px;
 }
 
 .list li{
     display: inline-block;
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    margin-right: 103px;
-    padding-top: 103px;
+    margin-right: 103px;   
 }
 
 .list li:last-child{
