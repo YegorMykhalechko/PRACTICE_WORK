@@ -1,0 +1,67 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Roboto", "Arial", sans-serif;
+    color: #515151;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 900;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.clearfix::after{
+    display: table;
+    content:"";
+    clear: both;
+}
+
+.conteiner{
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.header-logo {
+    display: inline-block;
+    font-size: 30px;
+}
+
+.header-list {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 460px;
+}
+
+.header-list li{
+    float: left;
+}
+
+.header-list li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.header-list a {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 11px;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+
+
