@@ -36,6 +36,10 @@ img {
 .header-logo {
     display: inline-block;
     font-size: 30px;
+    letter-spacing: -1px;
+    line-height: 32px;
+    color: #1abc9c;
+
 }
 
 .header-list {
@@ -61,7 +65,20 @@ img {
     line-height: 11px;
     font-size: 14px;
     margin-top: 40px;
+    line-height: 11px;
+    color: #1abc9c;
+    font-weight: 700;
+    font-family: "Open Sans";
 }
+
+.featured{
+    font-size: 48px;
+    letter-spacing: -1px;
+    line-height: 32px;
+    color: #515151;
+    text-align: center;
+}
+
 .shop-list{
     list-style: none;
     margin: 0;
@@ -71,7 +88,47 @@ img {
 .shop-list-item{
     width: 255px;
     height: 322px;
-    background-color: #e9f0fd;
+    background-color: #e9f0fd;    
+    position: relative;
+}
+
+.shop-list-item img{
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.shop-list-item p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    margin: 0;
+    width: 200px;
+    height: 40px;
+    padding-top: 4px;
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.shop-list-item span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: firebrick;
+    margin: 0;
+    height: 40px;
+    width: 55px;
+    padding-top: 4px;
+    text-align: center;   
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+
 }
 
 .shop-list li:not(:nth-child(4n)) {
@@ -86,6 +143,61 @@ img {
     float: left;
 }
 
+.news{
+    font-size: 48px;
+    letter-spacing: -1px;
+    line-height: 32px;
+    color: #515151;
+    text-align: center;
+}
 
+
+.news-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.news-list li{
+    float: left;
+    width: 350px;
+    height: 540px;
+}
+
+.news-list li:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+.news-list-p{   
+    font-size: 14px;
+    line-height: 26px;
+    color: #555252;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+
+.news-list-1{
+    font-size: 18px;
+    line-height: 26px;
+    color: #555252;
+    font-weight: 600;
+    font-family: "Open Sans";
+ }
+
+button{
+    width: 160px;
+    height: 51px;
+    border-radius: 3px;
+    filter: drop-shadow(1px 1.732px 2.5px rgba(0,0,0,0.39));
+    background-color: #4ec6ab;
+}
+
+.button{  
+   font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Open Sans";
+    text-align: center;
+}
 
 
