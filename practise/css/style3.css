@@ -1,0 +1,312 @@
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.overlay{
+    width: 100%;
+    height: 249px;
+    background-color: rgb(76,118,255);
+    opacity: 0;
+    position: absolute;
+}
+
+.cards{
+    width: 224px;
+    position: relative;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cards:hover .overlay{
+    opacity: 0.949;
+}
+
+.overlay-logo{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: lightcoral;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.article{
+    position: relative;
+    padding-left: 60px;
+    width: 270px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.article::before{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: lightcoral;
+}
+
+.modal-backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: burlywood;
+}
+
+.modal{
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slides{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slides-image{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slides-item{
+    position: relative;
+}
+
+.slides-description{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 350px;
+    padding: 10px;
+}
+
+.slider{
+    position: relative;
+    margin: auto;
+    width: 800px;
+    height: 400px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.slider-pagination-item{
+    display: inline-block;
+    width: 60px;
+    height: 5px;
+    background-color: darkmagenta;
+}
+
+.slider-pagination-active{
+    background-color: blue;
+}
+
+.slider-pagination{
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-control{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 50px;
+    height: 57px;
+    background-color: darkred;
+    border: none;
+    z-index: 1;
+}
+
+.slider-control-prev{
+    left: 0;
+}
+
+.slider-control-next{
+    right: 0;
+}
+
+.block{
+    background-image: linear-gradient(to right, rgba(239, 59, 54, 0.3), rgba(255, 255, 255, 0.3)),
+    linear-gradient(to top, rgba(0, 210, 255, 0.3), rgba(145, 140, 170, 0.3)),
+    url(https://raw.githubusercontent.com/luxplanjay/html-css-source-code/master/module-04/practise/img/banner.jpeg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* .block::after{
+    content: "";
+	display: block;    
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;      
+	left: 0;   
+	background: transparent;
+	background-image: linear-gradient(to left, #11de93, #0e7ad6);
+	opacity: 0.8;
+} */
+
+.block_1{
+    height: 400px;
+    width: 400px;
+    background-color: bisque;
+    position: relative;
+}
+
+.block_1 div{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+}
+
+.block_2 {
+    top: 0;
+    right: 0;
+    background-color: black;
+}
+
+.block_3{
+    top: 0;
+    left: 0;
+    background-color: brown;
+}
+
+.block_4{
+    bottom: 0;
+    left: 0;
+    background-color: blueviolet;
+}
+
+.block_5{
+    bottom: 0;
+    right: 0;
+    background-color: darkred;
+}
+
+.block_6{
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: chartreuse;
+}
+
+.block_7{
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: chocolate;
+}
+
+.block_8{
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: cornflowerblue;
+}
+
+.block_9{
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: darkgoldenrod;
+}
+
+.block_10{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: darkgreen;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    min-height: 100vh;
+    background-image: linear-gradient(#24C6DC, #514A9D);
+    font-family: Roboto, sans-serif;
+  }
+  
+  .wrapper {
+    max-width: 600px;;
+    margin: auto;
+  } 
+  
+  .menu {
+    list-style: none;
+    padding: 10px;
+  /*   border: 10px solid #424242; */
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .menu-item {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .menu-item > a,
+  .submenu-item > a {
+    display: inline-block;
+    padding: 15px 30px; 
+    color: #424242;
+    background-color: #fff;
+    text-decoration: none;
+  }
+  
+  .menu-item > a:hover,
+  .submenu-item > a:hover{
+    background: #E91E63;
+    color: #ffffff;
+  }
+  
+  .submenu {
+    /* делаем невидимым .submenu */
+    display: none;
+    /* при появлении .submenu окажется поверх других элементов */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    background-color: blue;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* делаем .submenu видимым */
+  .menu-item:hover > .submenu {
+    display: block;
+  }
+  
+  .submenu-item {
+    white-space: nowrap;
+  }
+  
+  
+
