@@ -98,7 +98,7 @@ img {
   font-size: 24px;
   color: #333333;
   font-family: "Kaushan Script";
-  margin: 0;
+  margin: 0 0 25px;
 }
 
 .sub-title {
@@ -107,7 +107,6 @@ img {
   align-items: center;
   font-size: 30px;
   color: #333333;
-  font-weight: 700;
   text-transform: uppercase;
   margin: 0;
 }
@@ -202,7 +201,6 @@ img {
   font-size: 15px;
   line-height: 24px;
   color: #999999;
-  font-weight: 400;
   font-family: "Roboto";
   text-align: center;
 }
@@ -358,19 +356,16 @@ img {
 
 .footer-subscribe{
     display:flex;
-    flex: 0 0 380px;
 }
 
 .footer-input{
     width: 230px;
     height: 40px;
-    background-color: #ffffff;
     border: 1px solid #e7e7e7;
 }
 
 .footer-button{
     width: 150px;
-    height: 40px;
     background-color: #95e1d3;
     border: none;
     cursor: pointer;
