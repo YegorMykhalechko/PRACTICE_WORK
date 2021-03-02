@@ -84,12 +84,12 @@
       </div>
     </div> -->
 
-    <div class="wrapper">
+    <!-- <div class="wrapper">
       <ul class="menu">
-        <!-- Пункт меню -->
+        
         <li class="menu-item">
           <a href="#">menu-item</a>
-          <!-- Подменю вложенное в menu-item -->
+          
           <ul class="submenu">
             <li class="submenu-item">
               <a href="#">submenu-item</a>
@@ -102,10 +102,10 @@
             </li>
           </ul>
         </li>
-        <!-- Пункт меню -->
+        
         <li class="menu-item">
           <a href="#">menu-item</a>
-          <!-- Подменю вложенное в menu-item -->
+          
           <ul class="submenu">
             <li class="submenu-item">
               <a href="#">submenu-item</a>
@@ -118,10 +118,10 @@
             </li>
           </ul>
         </li>
-        <!-- Пункт меню -->
+        
         <li class="menu-item">
           <a href="#">menu-item</a>
-          <!-- Подменю вложенное в menu-item -->
+          
           <ul class="submenu">
             <li class="submenu-item">
               <a href="#">submenu-item</a>
@@ -135,6 +135,63 @@
           </ul>
         </li>
       </ul>
+    </div> -->
+<form class="filter-form">
+  <section class="size-filter">
+    <h2 class="size-filter-title">Filter By Size</h2>
+    <ul class="size-filter-list">
+      <li class="size-filter-item">
+        <input class="size-filter-check visually-hidden" type="checkbox" name="item_size" vale="small" id="size-s">
+        <label class="size-filter-label" for="size-s">
+          <span class="size-filter-item-size">s</span>
+          <span class="size-filter-item-count">3</span>
+        </label>
+      </li>
+    </ul>
+    <ul class="size-filter-list">
+      <li class="size-filter-item">
+        <input class="size-filter-check visually-hidden" type="checkbox" name="item_size" value="medium" id="size-m">
+        <label class="size-filter-label" for="size-m">
+          <span class="size-filter-item-size">m</span>
+          <span class="size-filter-item-count">4</span>
+        </label>
+      </li>
+    </ul>
+    <ul class="size-filter-list">
+      <li class="size-filter-item">
+        <input class="size-filter-check visually-hidden" type="checkbox" name="item_size" value="large" id="size-l">
+        <label class="size-filter-label" for="size-l">
+          <span class="size-filter-item-size">l</span>
+          <span class="size-filter-item-count">5</span>
+        </label>
+      </li>
+    </ul>
+  </section>
+  <section class="">
+    <h2 class="size-filter-title">filter by price</h2>
+    <div class="price-filter">
+      <div class="range-control">
+        <div class="scale">
+          <div class="bar" style="width: 70%;"></div>
+        </div>
+
+        <div class="range-toogle range-toogle-min"></div>
+        <div class="range-toogle range-toogle-max"></div>
+      </div>
+
+      <div class="price-control">
+        <label class="min-prace">
+          ОТ
+          <input type="text" value="1000" name="min-price">
+        </label>
+
+        <label class="max-price">
+          ДО
+          <input type="text" value="10000" name="max-price">
+        </label>
+      </div>
     </div>
+  </section>
+</form>
   </body>
 </html>
