@@ -1,0 +1,112 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Raleway", "Arial", sans-serif;
+    color: #6c7279;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.main-table{
+    border: 2px solid gray;  
+    margin: 40px auto;
+    border-collapse: collapse;
+    width: 400px;
+    height: 300px;
+}
+
+.table-title{
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: black;
+}
+
+td{
+    border: 2px solid gray;
+    text-align: center;
+}
+
+th{
+    color: #ffffff;
+    background-color: grey;
+}
+
+.colum-offer{
+    text-transform: uppercase;
+    text-align: start;
+}
+
+.main-form{
+    width: 600px;
+    height: auto;
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.form-button{
+    width: 100px;
+    height: 50px;
+}
+
+.form-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.form-item:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.form-item input{
+    width: 100%;
+    height: 50px;
+}
+
+.form-message{
+    width: 100%;
+    height: 300px;
+    resize: none;
+}
+
+
+
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
