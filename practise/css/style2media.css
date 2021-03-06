@@ -1,0 +1,116 @@
+@media (max-width: 599px) {
+    .page-header{
+        margin-bottom: 30px;
+    }
+    .banner{
+        display: none;
+    }
+    .feature-list-item:not(:last-child) {
+        margin-bottom: 40px;
+    }
+    .team-list-item{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .team-list-item:not(:last-child) {
+        margin-bottom: 40px;
+    }
+    .page-nav{
+        padding: 10px 0;
+    }
+    .site-navigation a{
+        font-size: 30px;
+        line-height: 1;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .site-logo{
+        margin-bottom: 20px;
+    }
+    .site-logo img{
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 600px) {
+    .conteiner{
+        width: 600px;
+    }
+    .page-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .site-navigation {
+        display: flex;
+        justify-content: space-between;
+    }
+    .banner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 200px;
+        margin-bottom: 120px;
+        background-image: linear-gradient(to right, rgba(239, 59, 54, 0.3), rgba(255, 255, 255, 0.3)),
+        linear-gradient(to top, rgba(0, 210, 255, 0.3), rgba(145, 140, 170, 0.3)),
+        url(https://raw.githubusercontent.com/luxplanjay/html-css-source-code/master/module-04/practise/img/banner.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }    
+    .slider{    
+        height: 150px;
+        background-color: azure;
+    }
+    .feature-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }    
+    .feature-list-item {
+        flex: 0 0 270px;
+    }
+    .team-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .team-list-item {
+        flex: 0 0 270px;
+    }
+}
+
+@media(min-width:600px) and (max-width:1169px){
+    .feature-list-item:not(:nth-last-child(-n+2)),
+    .team-list-item:not(:nth-last-child(-n+2)) {
+        margin-bottom: 40px;
+    }
+    .site-logo {
+        margin-bottom: 20px;
+    }
+    .site-navigation{
+        width: 100%;
+    }
+}
+
+@media(min-width:1170px){
+    .conteiner{
+        width: 1170px;
+    }
+    .page-nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .site-navigation {
+        width: 600px;
+    }
+    .banner{
+        min-height: 400px;
+    }
+    .feature-list-item{
+        flex: 0 0 370px;
+        padding: 0 38px;
+        margin-bottom: 72px;
+    }
+}
