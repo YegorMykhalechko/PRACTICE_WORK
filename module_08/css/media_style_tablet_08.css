@@ -17,9 +17,12 @@
   .main-content {
     padding-bottom: 30px;
   }
-
-  .item-description {
+  .item-description{
     margin: 0 30px;
+  }
+
+  .list-item:not(:nth-last-child(-n+1)){
+    margin-bottom: 30px;
   }
 
   .main-title {
