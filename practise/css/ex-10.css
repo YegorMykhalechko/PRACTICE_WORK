@@ -1,0 +1,36 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Raleway", "Arial", sans-serif;
+    color: #6c7279;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.page-navigation__figure{
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    background-image: url(../img/placeimg_400_200_nature.jpg);
+    background-size: cover;
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .page-navigation__figure{
+        background-image: url(../img/placeimg_800_400_nature@2x.jpg);
+    }
+}

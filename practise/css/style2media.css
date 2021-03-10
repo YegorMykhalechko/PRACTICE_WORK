@@ -5,10 +5,10 @@
     .banner{
         display: none;
     }
-    .feature-list-item:not(:last-child) {
+    .feature__item:not(:last-child) {
         margin-bottom: 40px;
     }
-    .team-list-item{
+    .team__item{
         margin-left: auto;
         margin-right: auto;
     }
@@ -18,7 +18,7 @@
     .page-nav{
         padding: 10px 0;
     }
-    .site-navigation a{
+    .site-navigation__link{
         font-size: 30px;
         line-height: 1;
         padding: 10px 0;
@@ -27,7 +27,7 @@
     .site-logo{
         margin-bottom: 20px;
     }
-    .site-logo img{
+    .site-logo__img{
         margin: 0 auto;
     }
 }
@@ -63,27 +63,20 @@
         height: 150px;
         background-color: azure;
     }
-    .feature-list {
+    .section__list {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }    
-    .feature-list-item {
-        flex: 0 0 270px;
-    }
-    .team-list {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    .team-list-item {
+    .feature__item,
+    .team__item{
         flex: 0 0 270px;
     }
 }
 
 @media(min-width:600px) and (max-width:1169px){
-    .feature-list-item:not(:nth-last-child(-n+2)),
-    .team-list-item:not(:nth-last-child(-n+2)) {
+    .feature__item:not(:nth-last-child(-n+2)),
+    .team__item:not(:nth-last-child(-n+2)) {
         margin-bottom: 40px;
     }
     .site-logo {
@@ -102,15 +95,43 @@
         flex-direction: row;
         justify-content: space-between;
     }
-    .site-navigation {
+
+    .page-nav__site-navigation{
         width: 600px;
     }
     .banner{
         min-height: 400px;
     }
-    .feature-list-item{
+    .feature__item{
         flex: 0 0 370px;
         padding: 0 38px;
         margin-bottom: 72px;
+    }
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+    .feature__icon--tool::before{
+        background-image: url(https://raw.githubusercontent.com/luxplanjay/html-css-source-code/master/module-10/practise/img/icons/features/icon-tools%402x.png);
+    }
+    
+    .feature__icon--::before{
+        background-image: url(https://raw.githubusercontent.com/luxplanjay/html-css-source-code/master/module-10/practise/img/icons/features/icon-atom%402x.png);
+    }
+    
+    .feature__icon--::before{
+        background-image: url(https://raw.githubusercontent.com/luxplanjay/html-css-source-code/master/module-10/practise/img/icons/features/icon-bulb%402x.png);
+    }
+    
+    .feature__icon--::before{
+        background-image: url(https://raw.githubusercontent.com/luxplanjay/html-css-source-code/master/module-10/practise/img/icons/features/icon-case%402x.png);
+    }
+    
+    .feature__icon--::before{
+        background-image: url(https://raw.githubusercontent.com/luxplanjay/html-css-source-code/master/module-10/practise/img/icons/features/icon-computer%402x.png);
+    }
+    
+    .feature__icon--::before{
+        background-image: url(https://raw.githubusercontent.com/luxplanjay/html-css-source-code/master/module-10/practise/img/icons/features/icon-download%402x.png);
     }
 }

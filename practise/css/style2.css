@@ -21,6 +21,18 @@ img {
     height: auto;
 }
 
+.link{
+    display: block;
+    text-decoration: none;
+
+}
+
+.list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 .conteiner{
     width: 320px;
     padding: 0 15px;
@@ -60,97 +72,78 @@ img {
 
 .site-navigation {
     font-size: 13px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
-.site-navigation a {
-    display: block;
+.site-navigation__link {
     color: #ffffff;
     font-weight: 700;
     text-transform: uppercase;
-    text-decoration: none;
     line-height: 16px;
     transition: color 0.3s linear;
 
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation__link:hover,
+.site-navigation__link:focus {
     color: #e84545     
 }
 
-.feature {
+.section {
     margin-bottom: 120px;
 }
 
-.feature-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.feature-list-item {
+.feature__item {
     width: 290px;  
     text-align: center;
 }
 
-.feature-list-item::before{
+.feature__item::before{
     content: "";
     display: block;
     height: 60px;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
     margin-bottom: 34px;
 }
 
-.icon-tool::before{
+.feature__icon--tool::before{
     background-image: url(https://raw.githubusercontent.com/luxplanjay/html-css-source-code/master/module-04/practise/img/icons/features/icon-tools.png);
 }
 
-.icon-atom::before{
+.feature__icon--atom::before{
     background-image: url(https://raw.githubusercontent.com/luxplanjay/html-css-source-code/master/module-04/practise/img/icons/features/icon-atom.png);
 }
 
-.icon-bulp::before{
+.feature__icon--bulp::before{
     background-image: url(https://raw.githubusercontent.com/luxplanjay/html-css-source-code/master/module-04/practise/img/icons/features/icon-bulb.png);
 }
 
-.icon-case::before{
+.feature__icon--case::before{
     background-image: url(https://raw.githubusercontent.com/luxplanjay/html-css-source-code/master/module-04/practise/img/icons/features/icon-case.png);
 }
 
-.icon-comp::before{
+.feature__icon--comp::before{
     background-image: url(https://raw.githubusercontent.com/luxplanjay/html-css-source-code/master/module-04/practise/img/icons/features/icon-computer.png);
 }
 
-.icon-download::before{
+.feature__icon--download::before{
     background-image: url(https://raw.githubusercontent.com/luxplanjay/html-css-source-code/master/module-04/practise/img/icons/features/icon-download.png);
 }
 
 
-.feature-list-item:nth-child(3n) {
+.feature__item:nth-child(3n) {
     margin-right: 0;
 }
 
-.team {
-    margin-bottom: 120px;
-}
-.feature-list-item h3 {
+.feature__title {
     margin-bottom: 24px;
     color: #2d3033;
     line-height: 17px;  
     font-size: 14px; 
 }
 
-.team-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.team-list-item {
+.team__item {
     width: 270px;
     padding: 10px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
@@ -159,99 +152,84 @@ img {
                 box-shadow 0.3s linear;
 }
 
-.team-list-item:hover{
+.team__item:hover{
     transform: scale(1.05);
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12),
     0 10px 10px rgba(0,0,0, 0.22);
 } 
 
-.team-list-image{
+.team__item-image{
     filter: grayscale(1);
     transition: filter 0.3s ease-out;
 }
 
-.team-list-item:hover .team-list-image {
+.team__item:hover .team__item-image {
     filter: grayscale(0);
 }
 
-.team-list-name{
+.team__item-name{
     font-size: 22px;
     line-height: 26px;
     color: #2d3033;
 }
 
-.team-list-occupation{
+.team__item-occupation{
     font-size: 13px;
     line-height: 16px;
     color: #e84545;
     text-transform: uppercase;
 }
 
-.team-list-social {
+.socials {
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    
 }
 
-.team-list-social a{
-    display: block;
+.socials__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
     border: 1px solid rgb(232, 236, 238);
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: background-color 0.3s linear;
 }
 
-.team-list-social li {
+.socials__link:hover .socials__icon{
+    fill: #e84545;
+}
 
+.socials__icon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    fill: #c6cacc;
+    transition: fill 0.3s linear; 
+}
+
+.socials__item {
     margin-right: 4px;
 }
 
-.team-list-social a:hover,
-.team-list-social a:focus{
-    background-color: #e84545;  
-}
-
-.item-facebook{
-    background-image: url(https://raw.githubusercontent.com/luxplanjay/html-css-source-code/master/module-03/practise/img/icon-facebook.png);
-
-}
-.item-twitter{
-    background-image: url(https://raw.githubusercontent.com/luxplanjay/html-css-source-code/master/module-03/practise/img/icon-twitter.png);
-}
-.item-linkedin{
-    background-image: url(https://raw.githubusercontent.com/luxplanjay/html-css-source-code/master/module-03/practise/img/icon-linkedin.png);
-}
-
 .page-footer{
-    display: none;
+    color: #ffffff;
     background-color: #3a3e64;
 }
 
-.page-footer .conteiner{
-    min-height: 246px;
+.page-footer__conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 240px;
 }
 
-.socials-list-footer{
-
-}
-
-.socials-list-footer li{   
-
-    list-style: none;
-}
-
-.socials-list-footer a{
-    text-decoration: none;
-}
-
-.download-footer button{
+.button{
     border: none;
-    margin: 0;
+    margin: 0; 
+    padding: 0;
+    cursor: pointer;
+}
+
+.download__button{
     padding: 14px 82px;
     background-color: #e84545;
     font-size: 13px;
@@ -259,7 +237,6 @@ img {
     font-weight: 600;
     color: #ffffff;
     text-transform: uppercase;
-    cursor: pointer;
   }
 
 
