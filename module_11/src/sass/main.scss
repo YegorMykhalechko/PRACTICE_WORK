@@ -1,0 +1,60 @@
+
+// Basic
+
+@import 'normalize.scss';
+@import './helpers/variables.scss';
+@import './helpers/placeholder.scss';
+@import './helpers/mixin.scss';
+@import 'base.scss';
+@import './components/wrappper.scss';
+
+// Header
+@import './components/page-header.scss';
+
+// Navigation
+@import './components/page-navigation.scss';
+@import './components/page-logo.scss';
+@import './components/navigation-list.scss';
+@import './components/navigation-icon.scss';
+@import './components/navigation-link.scss';
+
+// Header-Title
+@import './components/page-caption.scss';
+@import './components/page-caption__subtitle.scss';
+@import './components/page-caption__title.scss';
+@import './components/main-button.scss';
+
+// Service
+@import './components/section__subtitle.scss';
+@import './components/section__title.scss';
+@import './components/service__list.scss';
+@import './components/service__item.scss';
+@import './components/article.scss';
+@import './components/article__title.scss';
+@import './components/article__text.scss';
+
+// Team
+@import './components/team.scss';
+@import './components/team__text.scss';
+@import './components/team__list.scss';
+@import './components/team__item.scss';
+@import './components/team__container.scss';
+@import './components/team__card.scss';
+@import './components/team__image.scss';
+@import './components/card__list.scss';
+@import './components/card__item.scss';
+@import './components/card__link.scss';
+@import './components/card__icon.scss';
+@import './components/card__text.scss';
+
+// Footer
+@import './components/footer.scss';
+@import './components/footer__content.scss';
+@import './components/footer__information.scss';
+@import './components/footer__logo.scss';
+@import './components/footer__subscribe.scss';
+@import './components/footer__input.scss';
+@import './components/footer__button.scss';
+
+
+

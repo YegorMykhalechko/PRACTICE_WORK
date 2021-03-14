@@ -1,0 +1,8 @@
+.article__text {
+  @extend %paragraph;
+  font-size: map-get($text-size, 'subtext');
+  line-height: 24px;
+  color: map-get($colors, 'subtitle');
+  font-family: 'Roboto';
+  text-align: start;
+}

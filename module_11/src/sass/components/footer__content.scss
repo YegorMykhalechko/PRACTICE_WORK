@@ -1,0 +1,6 @@
+.footer__content {
+  @include center-flex($type: 'ver');
+  justify-content: space-between;
+  height: 60px;
+  border-top: 1px solid map-get($colors, 'border');
+}

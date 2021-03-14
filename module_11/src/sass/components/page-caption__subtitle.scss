@@ -1,0 +1,7 @@
+.page-caption__subtitle{
+    @extend %paragraph;
+    font-family: 'Kaushan Script';
+    font-size: map-get($text-size, 'main-subtitle' );
+    color: map-get($colors, 'primary');
+    margin-bottom: 65px;
+}

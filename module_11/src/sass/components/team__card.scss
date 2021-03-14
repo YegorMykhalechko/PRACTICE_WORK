@@ -1,0 +1,15 @@
+.team__card {
+  position: relative;
+  background-image: linear-gradient(
+    0deg,
+    rgba(251, 227, 137, 0.9) 0%,
+    rgba(243, 138, 129, 0.9) 100%
+  );
+  transition: transform 0.2s linear;
+  &:hover .team__image {
+    opacity: 0.1;
+  }
+  &:hover .card__list {
+    opacity: 1;
+  }
+}

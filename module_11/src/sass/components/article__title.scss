@@ -1,0 +1,5 @@
+.article__title {
+  @extend %title;
+  font-weight: map-get($fonts-weight, 'regular');
+  margin-bottom: 20px;
+}

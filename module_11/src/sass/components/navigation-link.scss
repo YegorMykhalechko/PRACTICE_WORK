@@ -1,0 +1,9 @@
+.page-nav__link {
+  @extend %link;
+  color: map-get($colors, 'primary');
+  transition: all 0.2s linear;
+  &:hover {
+      border-bottom: 3px solid map-get($colors, 'accent');
+      fill: map-get($colors, 'accent');
+  }
+}

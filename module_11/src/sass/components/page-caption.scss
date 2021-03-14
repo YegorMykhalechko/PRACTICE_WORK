@@ -1,0 +1,6 @@
+.page-caption{
+    @include center-flex($type: 'ver');
+    flex-direction: column;
+    width: 821px;
+    margin: 0 auto;
+}

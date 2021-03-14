@@ -1,0 +1,5 @@
+.footer__logo{
+    @extend %link;
+    display: inline-block;
+    color: map-get($colors, 'pseodo');
+}

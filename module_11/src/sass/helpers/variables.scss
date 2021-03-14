@@ -1,0 +1,31 @@
+$main-fonts: 'Montserrat', 'Roboto', 'Kaushan Script', sans-serif;
+
+$fonts-weight: (
+  'bold': 700,
+  'regular': 400,
+  'light': 300,
+);
+
+$text-line: 1;
+
+$text-size: (
+  'main-title': 150px,
+  'main-subtitle': 72px,
+  'title-logo': 30px,
+  'subtitle': 24px,
+  'text': 14px,
+  'subtext': 15px,
+);
+$colors: (
+  'primary': #ffffff,
+  'section': #333333,
+  'subtitle': #999999,
+  'accent': #fce38a,
+  'pseodo': #f38181,
+  'background': #95e1d3,
+  'border': #e5e5e5,
+  'input': #e7e7e7,
+  'placeholder':  #cccccc
+);
+
+$icons: alarm, book, computer, home, image, line;

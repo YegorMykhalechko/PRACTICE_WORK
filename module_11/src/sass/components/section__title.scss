@@ -1,0 +1,14 @@
+.section__title{
+    @extend %title;
+    @include center-flex($type: 'ver');
+    flex-direction: column;
+    margin-bottom: 65px; 
+    font-size: map-get($text-size, 'title-logo');
+    &::after{
+        @include pseudo($display: block, $content: '');
+        width: 60px;
+        height: 3px;
+        margin-top: 40px;
+        background-color: map-get($colors, 'pseodo');
+    }
+}

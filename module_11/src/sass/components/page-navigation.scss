@@ -1,0 +1,5 @@
+.page-nav{
+    @include center-flex($type: 'ver');
+    justify-content: space-between;
+    margin-bottom: 190px;
+}

@@ -1,0 +1,8 @@
+.footer__button {
+    @extend %button;
+    width: 150px;
+    height: 40px;
+    background-color:map-get($colors, 'background');
+    color: map-get($colors, 'primary');
+    font-weight: map-get($fonts-weight, 'bold');
+  }

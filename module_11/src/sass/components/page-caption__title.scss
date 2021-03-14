@@ -1,0 +1,7 @@
+.page-caption__title{
+    @extend %title;
+    font-size: map-get($text-size, 'main-title');
+    line-height: 140px;
+    color: map-get($colors, 'primary');
+    margin-bottom: 120px;
+}

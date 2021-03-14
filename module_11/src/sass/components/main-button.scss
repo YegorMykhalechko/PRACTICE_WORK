@@ -1,0 +1,13 @@
+.page-caption__button {
+    width: 160px;
+    height: 40px;
+    font-weight: map-get($fonts-weight, 'bold');
+    font-size: map-get($text-size, 'text');
+    color: map-get($colors, 'primary');
+    background-color: transparent;
+    border: 3px solid map-get($colors, 'primary');
+    transition: border 0.3s linear;
+    &:hover{
+        border: 5px solid map-get($colors, 'primary');
+    }
+  }

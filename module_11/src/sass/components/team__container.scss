@@ -1,0 +1,8 @@
+.team__container {
+    width: 380px;
+    background-color: map-get($colors, 'background');
+    margin-bottom: 30px;
+    &:hover .team__card {
+      transform: translate(-10px, -10px);
+    }
+  }
