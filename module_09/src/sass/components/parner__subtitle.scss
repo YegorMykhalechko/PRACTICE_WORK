@@ -1,0 +1,6 @@
+.parner__subtitle {
+    @extend %paragraph;
+    color: map-get($color, 'text');
+    font-weight: map-get($weight, 'light');
+    font-family: 'Roboto';
+  }

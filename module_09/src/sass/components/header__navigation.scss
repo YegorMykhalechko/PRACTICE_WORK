@@ -1,0 +1,11 @@
+.header__navigation {
+    @include wrapper();
+    margin-bottom: 40px;
+    @include sm(padding-top, 50px);
+    @include sm(display, flex);
+    @include sm(flex-direction, row-reverse);
+    @include sm(justify-content, space-around);
+    @include sm(align-items, center);
+    @include sm(margin-bottom, 160px);
+    @include md(justify-content, space-between);
+  }

@@ -1,0 +1,44 @@
+// Basic
+
+@import 'normalize.scss';
+@import 'smart-grid.scss';
+@import 'fonts.scss';
+@import './helpers/mixin.scss';
+@import './helpers/variable.scss';
+@import './helpers/placeholder.scss';
+@import 'base.scss';
+
+
+// Hedaer
+
+@import './components/page-header.scss';
+@import './components/header__navigation.scss';
+@import './components/header__list.scss';
+@import './components/header__item.scss';
+@import './components/button__login.scss';
+@import './components/page__logo.scss';
+
+
+// Heder-Section
+
+@import './components/header-description.scss';
+@import './components/description__list.scss';
+@import './components/description__item.scss';
+@import './components/description__title.scss';
+@import './components/description__subtitle.scss';
+@import './components/description__button.scss';
+
+
+// Main
+@import './components/main-section.scss';
+@import './components/main__title.scss';
+@import './components/parner.scss';
+@import './components/parner_list.scss';
+@import './components/parner__item.scss';
+@import './components/parner__card.scss';
+@import './components/parner__icon.scss';
+@import './components/parner__image.scss';
+@import './components/parner__description.scss';
+@import './components/parner__title.scss';
+@import './components/parner__title.scss';
+@import './components/main__button.scss';

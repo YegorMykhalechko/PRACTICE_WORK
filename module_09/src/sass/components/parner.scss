@@ -1,0 +1,5 @@
+.parner {
+  @include wrapper();
+  @include center-flex($type: 'all') ;
+  flex-direction: column;
+}

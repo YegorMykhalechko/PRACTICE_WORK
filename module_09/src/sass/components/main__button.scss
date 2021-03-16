@@ -1,0 +1,13 @@
+.main__button {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    width: 280px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid map-get($color, 'button');
+    background-color: transparent;
+    color: map-get($color, 'button');
+    font-weight: map-get($weight, 'bold');
+  }
+  

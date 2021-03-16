@@ -1,0 +1,7 @@
+.header__item {
+    font-size: map-get($size, 'text');
+    color: map-get($color, 'white');
+    font-weight: map-get($weight, 'bold');
+    font-family: 'Montserrat';
+    text-align: center;
+  }

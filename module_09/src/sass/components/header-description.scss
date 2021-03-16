@@ -1,0 +1,6 @@
+.header-description {
+    @include wrapper();
+    @include size-sm(8);
+    @include sm(padding, 0);
+    @include size-md(6);
+  }

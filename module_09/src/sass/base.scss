@@ -1,0 +1,23 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $font;
+  color: map-get($color, 'section');
+  font-size: map-get($size, 'text');
+  line-height: $height;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+

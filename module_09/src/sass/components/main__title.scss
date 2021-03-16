@@ -1,0 +1,6 @@
+.main__title {
+    @extend %paragraph;
+    font-size: map-get($size, 'main-title');
+    color: map-get($color, 'section');
+    margin-bottom: 20px;
+  }

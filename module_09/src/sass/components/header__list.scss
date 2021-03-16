@@ -1,0 +1,9 @@
+.header__list {
+    padding-top: 30px;
+    @extend %list;
+    @include row-flex();
+    justify-content: center;
+    margin-bottom: 120px;
+    @include sm(margin-bottom, 0);
+    @include sm(padding-top, 0)
+  }

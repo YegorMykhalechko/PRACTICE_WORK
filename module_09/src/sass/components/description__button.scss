@@ -1,0 +1,12 @@
+
+
+.description__button {
+    @extend %button;
+    width: 280px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: map-get($color, 'button');
+    font-size: map-get($size, 'text');
+    color: map-get($color, 'white');
+    font-weight: map-get($weight, 'bold');
+  }

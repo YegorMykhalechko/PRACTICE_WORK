@@ -1,0 +1,12 @@
+.page-header {
+    height: 540px;
+    @include sm(height, 700px);
+    background-color: rgba(26, 25, 21, 1);
+    @include bg-image(
+      $path: '../images/title.png',
+      $size: cover,
+      $repeat: no-repeat,
+      $pos: center
+    );
+    margin-bottom: 75px;
+  }

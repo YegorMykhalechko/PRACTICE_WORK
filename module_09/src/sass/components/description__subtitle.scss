@@ -1,0 +1,11 @@
+.description__subtitle {
+    @extend %paragraph;
+    // margin: 0 auto;
+    // width: 280px;
+    @include col();
+    font-size: map-get($size, 'head-text');
+    font-weight: map-get($weight, 'light');
+    font-family: 'Roboto';
+    margin-bottom: 20px;
+  }
+  

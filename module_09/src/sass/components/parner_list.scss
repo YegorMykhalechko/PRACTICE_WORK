@@ -1,0 +1,10 @@
+.parner__list {
+    @extend %list;
+    margin-bottom: 30px;
+    @include row-flex();
+    justify-content: center;
+    @include col();
+    @include size(12);
+    @include size-sm(8);
+    @include size-md(12);
+  }

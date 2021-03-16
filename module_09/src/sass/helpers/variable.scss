@@ -1,0 +1,29 @@
+$font:'Montserrat', 'Roboto', sans-serif;
+
+$height: 1.25;
+
+$weight: (
+  'bold': 700,
+  'regular': 400,
+  'light': 300,
+);
+
+$size: (
+  'head-title': 30px,
+  'head-subtitle': 20px,
+  'head-text': 18px,
+  'text': 14px,
+  'main-title': 22px,
+);
+
+$color: (
+  'white': #ffffff,
+  'section': #333333,
+  'text': #666666,
+  'telegram': #4e73db,
+  'button': #ff4e50,
+  'coffe': #1cd7ad,
+  'bottle': #ffa507,
+);
+
+$icons: telegram, bottle, coffe, button;

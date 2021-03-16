@@ -1,0 +1,5 @@
+.parner__title {
+    @extend %paragraph;
+    font-size: map-get($size, 'text');
+    margin-bottom: 20px;
+  }

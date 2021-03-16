@@ -1,0 +1,8 @@
+
+.description__title {
+    @extend %title;
+    font-size: map-get($size, 'head-title');
+    margin-bottom: 20px;
+    @include sm(font-size, 52px);
+  }
+  

@@ -1,0 +1,26 @@
+.parner__icon {
+    position: relative;
+    display: inline-block;
+    margin: 0 0 20px;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      box-sizing: content-box;
+      width: 32px;
+      height: 32px;
+      border-radius: 20px;
+      border: 4px solid #ffffff;
+      background-repeat: no-repeat;
+      background-position: center;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  
+  @include generate-pseudo-icons-svg(
+    'parner__icon--',
+    $icons,
+    '../images/icon-',
+    'svg'
+  );
