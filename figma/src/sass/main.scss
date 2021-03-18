@@ -1,0 +1,225 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+@import 'bootstrap.min.scss';
+@import 'owl.carousel.min.scss';
+@import 'owl.theme.default.min.scss';
+@import 'base.scss';
+
+button {
+  display: block;
+  border: none;
+  background-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: normal;
+  font-weight: 700;
+  color: #151515;
+  margin: 0;
+  padding: 0;
+}
+
+.be-static {
+  position: static;
+}
+
+.vh-dependent {
+  height: 35vh;
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  height: 95vh;
+}
+
+.nav {
+  padding-top: 59px;
+  margin-bottom: 127px;
+}
+.nav__logo {
+}
+
+.nav__search {
+}
+
+.nav__menu {
+}
+
+.offer__content--title {
+  font-size: 60px;
+  letter-spacing: -0.01rem;
+  line-height: 1.2em;
+  margin-bottom: 30px;
+}
+
+.offer__content--text {
+  margin-bottom: 56px;
+}
+
+.offer__content--button {
+  background-color: #3726f2;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 13px 26px;
+  display: inline;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: #110691;
+  }
+}
+
+.offer__image {
+  background-image: url('../images/img1.jpg');
+  background-size: 80% 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: 142px;
+  width: 55%;
+  height: 80vh;
+}
+
+.offer__image--video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+  width: 41%;
+  height: 43%;
+  background-image: url('../images/video.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &::after {
+    content: '';
+    align-items: center;
+    justify-content: center;
+    display: block;
+    background-image: url('../images/play.svg');
+    width: 65px;
+    height: 65px;
+  }
+}
+
+.main {
+  padding-top: 137px;
+}
+
+.problem {
+  margin-bottom: 142px;
+}
+
+.problem__about {
+  margin-bottom: 61px;
+}
+
+.problem__about--title {
+  font-size: 38px;
+  margin-bottom: 30px;
+}
+
+.problem__about--text {
+}
+
+.problem__author {
+  background-image: url('../images/author.jpg');
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: center;
+  padding: 7px 0 7px 96px;
+}
+
+.problem__author--title {
+  font-size: 22px;
+}
+
+.problem__author--text {
+  margin-bottom: 0;
+}
+
+.services {
+}
+
+.services-wrapper{
+  margin-bottom: 99px;
+}
+
+.services__content {
+}
+
+.services__content--text {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.25em;
+  color: #8f8f8f;
+  margin-bottom: 40px;
+}
+
+.services__content--title {
+  font-size: 38px;
+}
+
+.services__list {
+  display: block;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  color: #8f8f8f;
+  margin-top: 67px;
+}
+
+.services__item {
+  margin-bottom: 20px;
+}
+
+.services__list--left {
+  margin-left: 37px;
+}
+
+.works-carousel .item, .works-carousel .owl-item {
+  width: 825px !important;
+  position: relative;
+}
+
+.owl-theme .owl-dots, .owl-theme .owl-nav {
+	text-align: left;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+	margin: 0;
+}
+
+.works-carousel .owl-nav {
+	margin-top: 50px !important;
+}
+
+.works-carousel .owl-prev {
+	margin-right: 25px !important;
+}
+
+.owl-carousel__play {
+	display: block;
+	background: url('../images/play.svg');
+	width: 65px;
+	height: 65px;
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -32px;
+    margin-top: -32px;
+    cursor: pointer;
+}
