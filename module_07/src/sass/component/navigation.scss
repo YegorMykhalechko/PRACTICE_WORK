@@ -1,0 +1,31 @@
+.navigation {
+  @include center-flex($type: 'ver');
+  justify-content: space-between;
+  padding-top: 65px;
+  margin-bottom: 120px;
+}
+
+.navigation__logo {
+  @extend %link;
+  @include font-settings('Wisdom', '', 26px, 41px);
+  color: map-get($color, 'accent');
+  letter-spacing: 1px;
+}
+
+.navigation__list {
+  width: 489px;
+  @extend %list;
+  @include center-flex($type: 'ver');
+  justify-content: space-between;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.navigation__link {
+  @extend %link;
+  color: #222222;
+  transition: color 0.2s linear;
+  &:hover {
+    color: map-get($color, 'accent');
+  }
+}

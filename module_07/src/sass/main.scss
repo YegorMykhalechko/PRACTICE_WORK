@@ -1,0 +1,24 @@
+/*
+ * BASE
+ */
+
+@import 'normalize.scss';
+@import 'fonts.scss';
+@import './helper/extra.scss';
+@import './helper/variable.scss';
+@import './helper/placeholder.scss';
+@import './helper/mixin.scss';
+@import 'base.scss';
+@import './component/wrapper.scss';
+
+// HEADER
+
+@import './component/navigation.scss';
+
+//SERVICES
+
+@import './component/services.scss';
+
+//CONTACT
+
+@import './component/contact.scss';

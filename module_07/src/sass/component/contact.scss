@@ -1,0 +1,93 @@
+.background {
+    background-color: map-get($color, 'text');
+    @include bg-image(
+      $path: '../images/Map-Image.png',
+      $size: contain,
+      $repeat: no-repeat,
+      $pos: center
+    );
+    min-height: 676px;
+    min-width: 100%;
+  
+    @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/Map-Image@2x.png);
+    }
+  }
+  
+  .contact__title {
+    @extend %title;
+    font-size: 40px;
+    color: map-get($color, 'white');
+    margin-bottom: 20px;
+    padding-top: 100px;
+  }
+  
+  .contact__text {
+    @extend %text;
+    font-family: 'Droid';
+    @extend %text;
+    margin-bottom: 80px;
+    color: map-get($color, 'subtext');
+  }
+  
+  .wrapper__form {
+    @include center-flex($type: 'ver');
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .wrapper__form--main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 209px;
+    @media (max-width: 455px) {
+      margin: 0 auto;
+    }
+  }
+  
+  .contact__form--input {
+    width: 455px;
+    min-height: 50px;
+    border-radius: 2px;
+    background-color: map-get($color, 'white');
+    border: 1px solid #cccccc;
+    padding: 20px;
+    &::placeholder {
+      text-transform: uppercase;
+      color: map-get($color, 'form');
+      font-weight: $bold;
+    }
+    @media (max-width: 455px) {
+      width: 300px;
+      margin-bottom: 15px;
+    }
+  }
+  
+  .contact__form--text {
+    width: 455px;
+    min-height: 209px;
+    background-color: map-get($color, 'white');
+    border: 1px solid #cccccc;
+    padding: 20px;
+    resize: none;
+    &::placeholder {
+      text-transform: uppercase;
+      color: map-get($color, 'form');
+      font-weight: $bold;
+    }
+  }
+  
+  .form__button {
+    @extend %button;
+    display: block;
+    min-width: 240px;
+    height: 65px;
+    border-radius: 3px;
+    background-color: map-get($color, 'accent');
+    margin: 0 auto;
+    font-size: 18px;
+    color: map-get($color, 'white');
+    font-weight: $bold;
+  }
