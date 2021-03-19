@@ -1,0 +1,54 @@
+.offer__content--title {
+    font-size: 60px;
+    letter-spacing: -0.01rem;
+    line-height: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .offer__content--text {
+    margin-bottom: 56px;
+  }
+  
+  .offer__content--button {
+    @extend %button;
+    background-color: #3726f2;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 13px 26px;
+    letter-spacing: 0.2rem;
+    transition: all 0.5s ease;
+    &:hover {
+      background-color: #110691;
+    }
+  }
+  
+  .offer__image {
+    background-image: url('../images/img1.jpg');
+    background-size: 80% 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 142px;
+    width: 55%;
+    height: 80vh;
+  }
+  
+  .offer__image--video {
+    @include center-flex ($type: 'all');
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+    width: 41%;
+    height: 43%;
+    @include bg-image($path: '../images/video.jpg', $size: cover, $repeat: no-repeat, $pos: center);
+    &::after {
+      content: '';
+      @include center-flex ($type: 'all');
+      background-image: url('../images/play.svg');
+      width: 65px;
+      height: 65px;
+    }
+  }

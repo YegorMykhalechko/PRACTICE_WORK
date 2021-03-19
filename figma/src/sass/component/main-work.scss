@@ -1,0 +1,101 @@
+.work {
+    margin-bottom: 248px;
+  }
+  
+  .work__header {
+    margin-bottom: 108px;
+  }
+  
+  .work__text {
+    @extend %text;
+    margin-bottom: 40px;
+  }
+  
+  .work__title {
+    font-size: 38px;
+  }
+  
+  .work__list {
+    @extend %list;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60px;
+    padding-top: 78px;
+  }
+  
+  .work__item {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+  }
+  
+  .work__link {
+    text-decoration: none;
+    color: #8d8d8d;
+    transition: color 0.5s ease;
+    &:hover {
+      text-decoration: none;
+      color: #1434e1;
+    }
+  }
+  
+  .work__gallery {
+    flex-wrap: wrap;
+    margin-bottom: 52px;
+  }
+  
+  .gallery__item {
+    margin-bottom: 30px;
+    display: block;
+    position: relative;
+    &:hover .gallery__item--image {
+      box-shadow: -30px 80px 200px rgba(0, 0, 0, 0.25);
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    &:hover::after {
+      content: '';
+      display: block;
+      background-image: url(../images/play.svg);
+      width: 65px;
+      height: 65px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -32px;
+      margin-top: -32px;
+    }
+  }
+  
+  .gallery__item--image {
+    transition: all 1s ease;
+    display: block;
+  }
+  
+  .work__block {
+    display: none !important; /* по умолчанию прячем все блоки */
+  }
+  .work__block--active {
+    display: flex !important; /* по умолчанию показываем нужный блок */
+  }
+  
+  .work__pay {
+    margin-bottom: 0;
+  }
+  
+  .work__button {
+    @extend %button;
+    background-color: #3726f2;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 13px 26px;
+    letter-spacing: 0.2rem;
+    transition: all 0.5s ease;
+    &:hover {
+      background-color: #110691;
+    }
+  }
