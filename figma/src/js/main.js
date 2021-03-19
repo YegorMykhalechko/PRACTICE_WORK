@@ -25,7 +25,7 @@ $(function() {
 	    margin:0,
 	    nav:true,
 	    dots: false,
-	    navText: ['<img src="img/left.svg">', '<img src="img/right.svg">'],
+	    navText: ['<img src="images/left.svg">', '<img src="images/right.svg">'],
 	    // startPosition: 1,
 	    responsive:{
 	        0:{

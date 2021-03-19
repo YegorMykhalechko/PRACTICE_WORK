@@ -43,6 +43,7 @@ h6 {
   padding-top: 59px;
   margin-bottom: 127px;
 }
+
 .nav__logo {
 }
 
@@ -70,7 +71,7 @@ h6 {
   font-weight: 500;
   font-size: 14px;
   padding: 13px 26px;
-  display: inline;
+  display: block;
   letter-spacing: 0.2rem;
   text-align: center;
   transition: all 0.5s ease;
@@ -154,7 +155,7 @@ h6 {
 .services {
 }
 
-.services-wrapper{
+.services-wrapper {
   margin-bottom: 99px;
 }
 
@@ -190,36 +191,281 @@ h6 {
   margin-left: 37px;
 }
 
-.works-carousel .item, .works-carousel .owl-item {
+.services__gallery {
+  margin-bottom: 181px;
+}
+
+.works-carousel .item,
+.works-carousel .owl-item {
   width: 825px !important;
   position: relative;
 }
 
-.owl-theme .owl-dots, .owl-theme .owl-nav {
-	text-align: left;
+.owl-theme .owl-dots,
+.owl-theme .owl-nav {
+  text-align: left;
 }
 
-.owl-theme .owl-nav [class*=owl-] {
-	margin: 0;
+.owl-theme .owl-nav [class*='owl-'] {
+  margin: 0;
 }
 
 .works-carousel .owl-nav {
-	margin-top: 50px !important;
+  margin-top: 50px !important;
 }
 
 .works-carousel .owl-prev {
-	margin-right: 25px !important;
+  margin-right: 25px !important;
 }
 
 .owl-carousel__play {
-	display: block;
-	background: url('../images/play.svg');
-	width: 65px;
-	height: 65px;
-	position: absolute;
+  display: block;
+  background: url('../images/play.svg');
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -32px;
+  margin-top: -32px;
+  cursor: pointer;
+}
+
+.features {
+  margin-bottom: 202px;
+}
+
+.features__gallery {
+  width: 50%;
+  height: 540px;
+  background-image: url('../images/img6.jpg');
+  background-position-x: left;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+}
+
+.features__images {
+  display: block;
+  width: 350px;
+  height: 453px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  box-shadow: 30px 80px 130px rgba(0, 0, 0, 0.25);
+}
+
+.features__content {
+  margin-left: 80px;
+  margin-top: 30px;
+}
+
+.features__content--title {
+  margin-bottom: 30px;
+}
+
+.features__content--text {
+  margin-bottom: 52px;
+}
+
+.features__content--link {
+  display: block;
+  padding-left: 83px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 30px;
+  padding-bottom: 18px;
+  padding-top: 18px;
+}
+
+.features__content--first {
+  background: url('../images/icon100.svg') no-repeat left center;
+}
+
+.features__content--second {
+  background: url('../images/bag.svg') no-repeat left center;
+}
+
+.work {
+  margin-bottom: 248px;
+}
+
+.work__header {
+  margin-bottom: 108px;
+}
+
+.work__text {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.25em;
+  color: #8f8f8f;
+  margin-bottom: 40px;
+}
+
+.work__title {
+  font-size: 38px;
+}
+
+.work__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 60px;
+  padding-top: 78px;
+}
+
+.work__item {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.work__link {
+  text-decoration: none;
+  color: #8d8d8d;
+  transition: color 0.5s ease;
+  &:hover {
+    text-decoration: none;
+    color: #1434e1;
+  }
+}
+
+.work__gallery {
+  flex-wrap: wrap;
+  margin-bottom: 52px;
+}
+
+.gallery__item {
+  margin-bottom: 30px;
+  display: block;
+  position: relative;
+  &:hover .gallery__item--image {
+    box-shadow: -30px 80px 200px rgba(0, 0, 0, 0.25);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  &:hover::after {
+    content: '';
+    display: block;
+    background: url(../images/play.svg);
+    width: 65px;
+    height: 65px;
+    position: absolute;
     left: 50%;
     top: 50%;
     margin-left: -32px;
     margin-top: -32px;
-    cursor: pointer;
+  }
+}
+
+.gallery__item--image {
+  transition: all 1s ease;
+  display: block;
+}
+
+.work__block {
+  display: none !important; /* по умолчанию прячем все блоки */
+}
+.work__block--active {
+  display: flex !important; /* по умолчанию показываем нужный блок */
+}
+
+.work__pay {
+  margin-bottom: 0;
+}
+
+.work__button {
+  background-color: #3726f2;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 13px 26px;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: #110691;
+  }
+}
+
+.testimonial {
+  margin-bottom: 176px;
+}
+
+.testimonial__title {
+  margin-bottom: 121px;
+}
+
+.testimonial__content--text {
+  margin-bottom: 73px;
+}
+
+.testimonial__content--title{
+  font-size: 38px;
+}
+
+.testimonial__author--title {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.testimonial__author--text {
+}
+
+.testimonial__image {
+  display: block;
+}
+
+.contributor-carousel .owl-nav {
+  display: flex;
+  margin-top: -50px;
+  position: relative;
+}
+
+.contributor-carousel .owl-prev {
+  margin-right: 25px;
+}
+
+.client{
+  padding-top: 102px;
+  background-color: #ffffff;
+}
+
+.client__descr{
+  margin-bottom: 82px;
+}
+
+.client__descr--title{
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 17px;
+  letter-spacing: 0.25em;
+}
+
+.client__descr--text{
+
+}
+
+.client__gallery{
+  margin-bottom: 146px;
+}
+
+.footer {
+	height: 240px;
+	background: #515151;
+}
+
+.footer__logo {
+	margin-top: 109px;
+	margin-bottom: 109px;
 }
